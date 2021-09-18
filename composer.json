@@ -1,0 +1,35 @@
+{
+    "name": "abdallahmohammed/laravel-telr",
+    "description": "Pay online with Telr payment gateway through Laravel",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "payment",
+        "telr payment",
+        "telr"
+    ],
+    "authors": [
+        {
+            "name": "AbdallahMohammed",
+            "email": "abdallah.r660@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/http": "^6.0|^7.0|^8.0",
+        "illuminate/support": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TelrGateway\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TelrGateway\\TelrServiceProvider"
+            ]
+        }
+    }
+}
