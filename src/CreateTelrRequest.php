@@ -377,7 +377,6 @@ class CreateTelrRequest extends AbstractTelrRequest implements Arrayable
      */
     protected function appendOrderIdToURL($url, $orderId)
     {
-        $url = url($url);
         $query = parse_url($url, PHP_URL_QUERY);
 
         return $url .= ($query ? '&' : '?')."cart_id={$orderId}";
